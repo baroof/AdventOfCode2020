@@ -1,4 +1,4 @@
-package aoc.day01;
+package aoc.day00;
 
 import org.junit.Test;
 
@@ -7,7 +7,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class Day01Test {
+public class Day00Test {
 
     @Test
     public void testPart1(){
@@ -15,7 +15,7 @@ public class Day01Test {
         List<String> input = Collections.singletonList("test");
 
         // When
-        String result = new Day01().part1(input);
+        String result = new Day00().part1(input);
 
         // Then
         assertEquals(input.get(0), result);
@@ -27,7 +27,7 @@ public class Day01Test {
         List<String> input = Collections.singletonList("test");
 
         // When
-        String result = new Day01().part2(input);
+        String result = new Day00().part2(input);
 
         // Then
         assertEquals(input.get(0), result);

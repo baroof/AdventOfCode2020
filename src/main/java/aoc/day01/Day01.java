@@ -8,7 +8,16 @@ public class Day01 implements Day {
 
     @Override
     public String part1(List<String> input) {
-        return input.isEmpty() ? "" : input.get(0);
+//        return input.isEmpty() ? "" : input.get(0);
+        for (String sentry : input) {
+            int entry = Integer.parseInt(sentry);
+            int remainder = 2020 - entry;
+            if (input.contains(Integer.toString(remainder))) {
+                String result = Integer.toString(entry * remainder);
+                return result;
+            }
+        }
+        return "no matches";
     }
 
     @Override

@@ -3,6 +3,7 @@
  */
 package aoc;
 
+import aoc.day00.Day00;
 import aoc.day01.Day01;
 
 import java.io.BufferedReader;
@@ -21,7 +22,8 @@ public class App {
 
     static {
         DAYS = new HashMap<>();
-        DAYS.put(1, new Day01());
+        DAYS.put(0, new Day00());
+//        DAYS.put(1, new Day01());
     }
 
     private static List<String> loadInput(int day){
